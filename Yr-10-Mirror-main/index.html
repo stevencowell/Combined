@@ -3017,6 +3017,28 @@
 </fieldset>
 <span class="quiz-msg"></span></form></article>
 </section>
+<!-- Popups for quiz submission (copied from Desk Tidy project) -->
+<div id="resultPopup" class="popup-overlay" role="dialog" aria-modal="true">
+  <div class="popup-box">
+    <button class="close-popup" aria-label="Close">&times;</button>
+    <h3>Results Submitted</h3>
+    <p>You can now visit Google Classroom to record your work.</p>
+    <a id="popupClassroomLink" href="https://classroom.google.com/c/NzQ5MDQxMzk4MjAz" target="_blank">Open Google Classroom</a>
+  </div>
+</div>
+<div id="submittedPopup" class="popup-overlay" role="dialog" aria-modal="true">
+  <div class="popup-box">
+    <p>Your results have been submitted.</p>
+    <button id="submittedOkBtn">OK</button>
+  </div>
+</div>
+<div id="namePopup" class="popup-overlay" role="dialog" aria-modal="true">
+  <div class="popup-box">
+    <label for="studentName"><b>Please enter your name:</b></label><br/>
+    <input type="text" id="studentName" style="margin-top:10px; padding:8px; width:95%;" />
+    <button id="submitNameBtn" style="margin-top:10px;">Submit</button>
+  </div>
+</div>
 <!--        FOOTER SECTION
        Contains the footer content and back-to-top link.
   ============================================================ -->
